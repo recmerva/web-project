@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(144, 219, 241);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 18px;
+}
+
+nav ul li {
+    margin-left: 21px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #eef3b8;
+}
+footer {
+    margin-top: px;
+    background-color: rgb(144, 219, 241);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.levi {
+    text-align: left;
+    flex-grow: 1; 
+    margin-left: 15px;
+}
+
+.desni {
+    text-align: right;
+    flex-grow: 1; 
+    margin-left: 15px;
+}
+.icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #eef3b8;
+}
+
+.search {
+    text-align: center;
+    padding: 50px;
+}
+
+.search-container { 
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontent,
+.additional-content {
+   
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kontent h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dodatni h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.kontent p, .dodatno p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.box {
+    margin-top: 5px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    font-size: 18.5px;
+    padding: 19px;
+    width: 74%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 16px;
+    padding: 19px;
+    width: 62%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: #555;
+}
+.active{
+    border-bottom: 2px solid white;
+}
+
+.pozadina{
+    position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pozadina::before{
+    content: "";
+    background: url('maps.png') center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; /*vrednost između 0 i 1 */
+    filter: blur(1px);
+}
+
+
+
+
+
+

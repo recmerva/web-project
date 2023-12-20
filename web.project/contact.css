@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(144, 219, 241);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 18px;
+}
+
+nav ul li {
+    margin-left: 21px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #eef3b8;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.blok {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(144, 219, 241);
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    color: #eef3b8;
+}
+
+.info {
+    max-width: 400px;
+    width: 100%;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+}
+
+.active{
+    border-bottom: 2px solid white;
+}
+
+.submit{
+    border: none;
+}
+
+footer {
+    background-color: rgb(144, 219, 241);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.levi {
+    text-align: left;
+    flex-grow: 1; 
+    margin-left: 15px;
+}
+
+.desni {
+    text-align: right;
+    flex-grow: 1; 
+    margin-left: 15px;
+}
+
+.icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #eef3b8;
+}
+.pozadina{
+    position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pozadina::before{
+    content: "";
+    background: url('maps.png') center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; /*vrednost između 0 i 1 */
+    filter: blur(1px);
+}
+
