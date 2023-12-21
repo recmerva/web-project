@@ -25,15 +25,16 @@
 <div class="pozadina">
     <section class="search">
         <div class="search-container">
-            <div class="kontent">
-                <h1>Pretraga</h1>
-                <p>Unesite lokaciju i saznajte trenutnu vremensku prognozu.</p>
 
-                <div class="box">
-                    <input type="text" id="location" placeholder="Unesite lokaciju">
-                    <button id="searchBtn"><i class="fas fa-search"></i> Pretraži</button>
-                </div>
-            </div>
+<div class="container">
+
+    <div class="searchcont">
+        <input type="text" id="cityInput" placeholder="Unesite grad: ">
+        <button onclick="searchWeather()">Pretrazi</button>
+    </div>
+    <div id="weather-widget"></div>
+</div>
+</div>
 
             <div class="dodatno">
                 <h2>Dobrodošli na Open Meteo</h2>
