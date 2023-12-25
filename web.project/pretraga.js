@@ -9,7 +9,7 @@ return
 
 try {
 	const apiKey = "ed8a951092ca4eac926183701231912"
-	const apiUrl=`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityinput}&api=no`
+	const apiUrl=`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityInput}&api=no`
 	const response=await fetch (apiUrl)
 
 
@@ -22,9 +22,9 @@ try {
 
 		widgetContainer.innerHTML=`
 		<div class="weather-info">
-		<h2>Weather in ${city}</h2>
-		<p>Temperature: ${temperature}C</p>
-		<p>Humidity: ${humidity}%</p>
+		<h2>Vremenska prognoza u ${city}</h2>
+		<p>Temperatura: ${temperature}°C</p>
+		<p>Vlaznost: ${humidity}%</p>
 		<!--Add more data as needed-->
 		</div>
 		`
