@@ -106,12 +106,13 @@ footer {
 .time-zone {
     display: inline-block;
     width: 200px;
-    margin-right: 20px;
     margin-bottom: 20px;
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-top: 200px;
+   
 }
 
 .time-zone h2 {
@@ -122,8 +123,10 @@ footer {
 .time-zone p {
     color: #666;
     margin: 0;
+    
 }
-.container {
+.container { 
+    gap: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
