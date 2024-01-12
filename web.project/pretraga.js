@@ -15,10 +15,8 @@ try {
 
 
 	if(response.ok){
-
 		const weatherData=await response.json();
 		
-
 		 const city=weatherData.location.name
 		 const temperature=weatherData.current.temp_c
 		 const humidity=weatherData.current.humidity
@@ -32,13 +30,10 @@ try {
 		 </div>
 		 `
 		 ;
-	
 }
 else{
 	alter("failed to fetch weather data")
-}
-	
-	
+}	
 }
 catch (error){
 	console.error("An error occurred while fetching weather data:", error);
